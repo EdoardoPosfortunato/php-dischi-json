@@ -33,5 +33,12 @@
     "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
     "anno_pubblicazione": 1969,
     "genere": "Rock"
+  },
+  {
+    "titolo": "il disco dell'anno",
+    "artista": "Me Medesimo",
+    "cover": "Coveriamo",
+    "anno_publicazione": "1890",
+    "genere": "Funky"
   }
 ]

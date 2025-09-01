@@ -1,13 +1,6 @@
 <?php
 
-$discos_string = file_get_contents("./data.json");
-
-$discos = json_decode($discos_string, true);
-
-
-
-// var_dump($discos);
-
+require_once './functions.php'
 
 ?>
 
@@ -22,6 +15,30 @@ $discos = json_decode($discos_string, true);
 
 <body>
     <h1>Dischi</h1>
+
+    <form action="./server.php" method="POST">
+        <h3>Inserisci un nuovo disco</h3>
+
+        <label for="title"  required>Titolo</label>
+        <input name="title" name="title" id="title" type="text">
+        <br>
+        <label for="artist"  required>Artista</label>
+        <input name="artist" name="artist" id="artist" type="text">
+        <br>
+        <label for="cover"  required>Cover</label>
+        <input name="cover" name="cover" id="cover" type="text">
+        <br>
+        <label for="year"  required>Anno di Pubblicazione</label>
+        <input name="year" name="year" id="year" type="text">
+        <br>
+        <label for="gender"  required>Genere</label>
+        <input name="gender" name="gender" id="gender" type="text">
+        <br>
+
+        <br>
+        <button>Aggiungi nuovo Album</button>
+
+    </form>
 
     <ul>
 
